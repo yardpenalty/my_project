@@ -1,5 +1,5 @@
 # my_project
-This is a symfony5.4 test project dev environment using Docker repo.
+This is a symfony5.4 test project dev environment using a Docker repo.
 
 Docker repo includes 4 Docker images that build 4 seperate docker containers:
 Apache2/PHP8.1 
