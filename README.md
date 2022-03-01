@@ -11,3 +11,6 @@ Repo Docker build here:
 
 https://github.com/yardpenalty/docker-compose-lamp.git
 
+NOTE: MYSQL_ROOT_PASSWORD=tiger
+
+
