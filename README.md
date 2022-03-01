@@ -11,6 +11,9 @@ Repo Docker build here:
 
 https://github.com/yardpenalty/docker-compose-lamp.git
 
-NOTE: MYSQL_ROOT_PASSWORD=tiger
+NOTES: 
+MYSQL_ROOT_PASSWORD=tiger
+May have to install xml pkg
+   $ sudo apt install php-xml
 
 
