@@ -23,4 +23,5 @@ May have to install xml pkg
 
    $ sudo apt install php-xml
 
+TODOS: setup fixtures for seeding
 
