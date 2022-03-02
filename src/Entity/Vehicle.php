@@ -37,7 +37,7 @@ class Vehicle
     #[ORM\Column(type: 'integer')]
     private $miles;
 
-    #[ORM\Column(type: 'string', length: 255)]
+    #[ORM\Column(type: 'string', length: 255, unique: true)]
     private $vin;
 
     #[ORM\Column(type: 'boolean', nullable: true)]
@@ -157,5 +157,16 @@ class Vehicle
         $this->deleted = $deleted;
 
         return $this;
+    }
+
+    public function toArray()
+    {
+        return [
+           /* 'id' => $this->getId(),
+            'firstName' => $this->getFirstName(),
+            'lastName' => $this->getLastName(),
+            'email' => $this->getEmail(),
+            'phoneNumber' => $this->getPhoneNumber()*/
+        ];
     }
 }

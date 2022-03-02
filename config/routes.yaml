@@ -3,10 +3,7 @@
 #    controller: App\Controller\DefaultController::index
 # bvs find url cmd
 # php bin/console debug:router
-# the "app_lucky_number" route name is not important yet
-app_lucky_number:
-    path: /lucky/number
-    controller: App\Controller\LuckyController::number
+
 vehicle_list:
   path: /api/vehicles
   controller: App\Controller\VehicleController:indexAction
