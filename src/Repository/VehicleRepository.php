@@ -49,7 +49,7 @@ class VehicleRepository extends ServiceEntityRepository
     //  * @return Vehicle[] Returns an array of Vehicle objects
     //  */
     /*
-    public function findByExampleField($value)
+    public function findBy($value)
     {
         return $this->createQueryBuilder('v')
             ->andWhere('v.exampleField = :val')

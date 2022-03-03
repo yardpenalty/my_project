@@ -75,6 +75,15 @@ class Vehicle
         return $this;
     }
 
+    public function setRandType(): ?string
+    {
+
+        $type = array(self::TYPE_NEW, self::TYPE_USED);
+        $this->type = $type[array_rand($type)];
+
+        return $this;
+    }
+
     public function getMsrp(): ?string
     {
         return $this->msrp;
@@ -157,16 +166,5 @@ class Vehicle
         $this->deleted = $deleted;
 
         return $this;
-    }
-
-    public function toArray()
-    {
-        return [
-           /* 'id' => $this->getId(),
-            'firstName' => $this->getFirstName(),
-            'lastName' => $this->getLastName(),
-            'email' => $this->getEmail(),
-            'phoneNumber' => $this->getPhoneNumber()*/
-        ];
     }
 }

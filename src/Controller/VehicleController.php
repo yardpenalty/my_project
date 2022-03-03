@@ -17,9 +17,15 @@ class VehicleController extends AbstractController
         foreach ($vehicles as $vehicle) {
            $data[] = [
                'id' => $vehicle->getId(),
-               'vin' => $vehicle->getVin(),
+               'date_added' => $vehicle->getDateAdded(),
+               'type' => $vehicle->getType(),
+               'msrp' => $vehicle->getMsrp(),
+               'year' => $vehicle->getYear(),
                'make' => $vehicle->getMake(),
                'model' => $vehicle->getModel(),
+               'miles' => $vehicle->getMiles(),
+               'vin' => $vehicle->getVin(),
+               'deleted' => $vehicle->getDeleted(),
            ];
         }
  
