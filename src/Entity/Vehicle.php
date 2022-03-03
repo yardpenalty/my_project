@@ -8,8 +8,6 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: VehicleRepository::class)]
 class Vehicle
 {  
-    const TYPE_NEW = 'new';
-    const TYPE_USED= 'used';
 
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -71,15 +69,6 @@ class Vehicle
             throw new \InvalidArgumentException("Invalid type");
         }
         $this->type = $type;
-
-        return $this;
-    }
-
-    public function setRandType(): ?string
-    {
-
-        $type = array(self::TYPE_NEW, self::TYPE_USED);
-        $this->type = $type[array_rand($type)];
 
         return $this;
     }
